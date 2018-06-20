@@ -17,10 +17,18 @@ function test(a, cb) {
   }
 }
 
-function haha () {
+function called () {
   test(true, function(data) {
     console.log('data:', data)
   })
 }
-haha()
+
+function uncalled () {
+  test(true, function(data) {
+    console.log('data:', data)
+  })
+}
+
+called()
+uncalled()
 ```
