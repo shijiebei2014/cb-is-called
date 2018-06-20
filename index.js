@@ -1,12 +1,12 @@
 const callsites = require('callsites')
 
 const isProduction = () => {
-  let isPrd = process.env.NODE_ENV || ''
+  var isPrd = process.env.NODE_ENV || ''
   isPrd = isPrd.toLowerCase() === 'production'
 }
 
 const getMethodTrace = (sites) => {
-    let methodNames = [],
+    var methodNames = [],
         i = 1;
     while(sites[i] && sites[i].getFunctionName()) {
       methodName.push(sites[i++].getFunctionName())
