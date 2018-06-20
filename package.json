@@ -1,6 +1,6 @@
 {
   "name": "cb-is-called",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "validate async callback is called!!!",
   "main": "index.js",
   "scripts": {
