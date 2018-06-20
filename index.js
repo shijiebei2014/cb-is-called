@@ -9,11 +9,11 @@ const getMethodTrace = (sites) => {
     var methodNames = [],
         i = 1;
     while(sites[i] && sites[i].getFunctionName()) {
-      methodName.push(sites[i++].getFunctionName())
+      methodNames.push(sites[i++].getFunctionName())
     }
-    methodName.reverse()
-    methodName.push('cb')
-    methodName = methodName.join(':')
+    methodNames.reverse()
+    methodNames.push('cb')
+    return methodNames.join(':')
 }
 
 module.exports = (cb) => {
