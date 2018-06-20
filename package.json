@@ -15,5 +15,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shijiebei2014/cb-is-called.git"
+  },
+  "dependencies": {
+    "callsites": "^2.0.0"
   }
 }
