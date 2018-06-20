@@ -17,8 +17,8 @@ const getMethodTrace = (sites) => {
 }
 
 module.exports = (cb) => {
-  let isPrd = isProduction()
-  let methodNames = getMethodTrace(callsites())
+  var isPrd = isProduction()
+  var methodNames = getMethodTrace(callsites())
   if (!isPrd) {
     console.log(methodNames + ' start')
   }
