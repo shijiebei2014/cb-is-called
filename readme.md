@@ -24,7 +24,7 @@ function called () {
 }
 
 function uncalled () {
-  test(true, function(data) {
+  test(false, function(data) {
     console.log('data:', data)
   })
 }
