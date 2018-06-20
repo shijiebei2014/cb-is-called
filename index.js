@@ -2,7 +2,7 @@ const callsites = require('callsites')
 
 const isProduction = () => {
   var isPrd = process.env.NODE_ENV || ''
-  isPrd = isPrd.toLowerCase() === 'production'
+  return isPrd.toLowerCase() === 'production'
 }
 
 const getMethodTrace = (sites) => {
